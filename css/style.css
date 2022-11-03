@@ -848,8 +848,8 @@ color: var(--primary-bg-color);
 }
 
 .spam{
-  display: inline-block;
-  margin-left: 93px;
+display: inline-block;
+
 }
 .form-spam{
   display: flex;
@@ -906,7 +906,7 @@ justify-content: space-between;
 
 display: flex;
 align-items: baseline;
-justify-content:start ;
+justify-content:space-between ;
 
 
 
@@ -942,7 +942,7 @@ fill: var(--primary-bg-color);
 display: inline-block;
 width: 206px;
 height: 80px;
-margin-left: 70px;
+
 }
 .join-item{
 
