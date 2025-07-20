@@ -18,25 +18,87 @@
 
 <body>
   <header class="header">
-    <div class="container flex-container">
+    <div class="container header-container">
       <nav class="header-nav">
         <a class="navigation-logo" href="./index.html">Web<span class="navigation-logo-header">Studio</span></a>
-        <ul class="header-navigation-list">
+        <ul class="header-nav-list">
           <li><a href="./index.html" class="header-nav-btn current">Studio</a></li>
           <li><a href="" class="header-nav-btn active">Portfolio</a></li>
           <li><a href="" class="header-nav-btn active">Contacts</a></li>
         </ul>
       </nav>
-      <address class="address">
-        <ul class="address-list">
+      <address class="contacts">
+        <ul class="contacts-list">
           <li>
-            <a href="mailto:info@devstudio.com" class="address-nav">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+110001111111" class="address-nav">+11 (000) 111-11-11</a>
+            <a href="tel:+110001111111" class="contacts-link">+11 (000) 111-11-11</a>
           </li>
         </ul>
       </address>
+      <button type="button" class="burger-btn" data-menu-open>
+        <svg width="24" height="24" class="burger-icon">
+          <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button" data-menu-close>
+            <svg class="close-modal-btn-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-exide"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav-case">
+            <ul class="menu-nav-list">
+              <li><a href="./index.html" class="menu-nav-btn">Studio</a></li>
+              <li><a href="" class="menu-nav-btn">Portfolio</a></li>
+              <li><a href="" class="menu-nav-btn">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="contacts-container">
+            <ul>
+              <li class="contacts-list-menu">
+                <a href="mailto:info@devstudio.com" class="menu-contacts">info@devstudio.com</a>
+              </li>
+              <li class="contacts-list-menu">
+                <a href="tel:+110001111111" class="menu-contacts">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="list-social">
+            <li class="list-icon">
+              <a href="https://www.instagram.com/" class="link-icon">
+                <svg width="24" height="24" class="icon-social">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-icon">
+              <a href="https://twitter.com/" class="link-icon">
+                <svg width="24" height="24" class="icon-social">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-icon">
+              <a href="https://facebook.com/" class="link-icon">
+                <svg width="24" height="24" class="icon-social">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="list-icon">
+              <a href="https://linkedin.com/" class="link-icon">
+                <svg width="24" height="24" class="icon-social">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
   <main>
@@ -104,7 +166,7 @@
       </div>
     </section>
     <!-- Section Our Team -->
-    <section class="section section-team">
+    <section class="section section-team hidden">
       <div class="container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
@@ -260,13 +322,13 @@
       </div>
     </section>
     <!-- Section Our Portfolio -->
-    <section class="section">
+    <section class="section hidden">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-list-about">
             <div class="portfolio-card-box ">
-              <img src="./images/Banking.jpg" width="360" alt="banking App" />
+              <img class="portfolio-card-img" src="./images/Banking.jpg" width="360" alt="banking App" />
               <p class="portfolio-card-text card-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App
@@ -280,7 +342,7 @@
           </li>
           <li class="portfolio-list-about">
             <div class="portfolio-card-box">
-              <img src="./images/Payment.jpg" width="360" alt="Cashless Payment" />
+              <img class="portfolio-card-img" src="./images/Payment.jpg" width="360" alt="Cashless Payment" />
               <p class="portfolio-card-text card-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App
@@ -294,7 +356,7 @@
           </li>
           <li class="portfolio-list-about">
             <div class="portfolio-card-box">
-              <img src="./images/Meditation.jpg" width="360" alt="Meditation App" />
+              <img class="portfolio-card-img" src="./images/Meditation.jpg" width="360" alt="Meditation App" />
               <p class="portfolio-card-text card-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App
@@ -308,7 +370,7 @@
           </li>
           <li class="portfolio-list-about">
             <div class="portfolio-card-box">
-              <img src="./images/Taxi.jpg" width="360" alt="Taxi Service" />
+              <img class="portfolio-card-img" src="./images/Taxi.jpg" width="360" alt="Taxi Service" />
               <p class="portfolio-card-text card-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App
@@ -322,7 +384,7 @@
           </li>
           <li class="portfolio-list-about">
             <div class="portfolio-card-box">
-              <img src="./images/Illustrations.jpg" width="360" alt="Screen Illustrations" />
+              <img class="portfolio-card-img" src="./images/Illustrations.jpg" width="360" alt="Screen Illustrations" />
               <p class="portfolio-card-text card-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App
@@ -336,7 +398,7 @@
           </li>
           <li class="portfolio-list-about">
             <div class="portfolio-card-box">
-              <img src="./images/Courses.jpg" width="360" alt="Online Courses" />
+              <img class="portfolio-card-img" src="./images/Courses.jpg" width="360" alt="Online Courses" />
               <p class="portfolio-card-text card-overlay">
                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                 Tracker App
@@ -352,16 +414,16 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer hidden">
     <div class="container footer-container">
-      <div class="footer-logo-box">
+      <div class="footer-logo-box footer-mobile">
         <a href="./index.html" class="footer-logo">Web<span class="navigation-logo-footer">Studio</span></a>
         <p class="footer-description">
           Increase the flow of customers and sales for your business with
           digital marketing & growth solutions.
         </p>
       </div>
-      <div class="footer-icon-box">
+      <div class="footer-icon-box footer-mobile">
         <p class="footer-icon-description">Social media</p>
         <ul class="list-social gap">
           <li class="list-icon">
@@ -401,17 +463,17 @@
             <input class="footer-subscribe-input" id="footer-email" type="email" name="footer-email"
               placeholder="E-mail">
           </label>
-          <button class="footer-subscribe-button" type="submit">
-            Subscribe
-            <svg class="footer-btn-svg" width="24" height="24">
-              <use href="./images/icons.svg#icon-telegram"></use>
-            </svg>
-          </button>
         </form>
+        <button class="footer-subscribe-button" type="submit">
+          Subscribe
+          <svg class="footer-btn-svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-telegram"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </footer>
-  <div class="modal-overlay is-open">
+  <div class="modal-overlay is-open hidden">
     <div class="modal">
       <button type="button" class="close-modal-btn">
         <svg class="close-modal-btn-svg" width="8" height="8">
@@ -467,6 +529,7 @@
       </form>
     </div>
   </div>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
