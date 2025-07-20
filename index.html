@@ -67,7 +67,7 @@
               </li>
             </ul>
           </address>
-          <ul class="list-social">
+          <ul class="list-social-menu">
             <li class="list-icon">
               <a href="https://www.instagram.com/" class="link-icon">
                 <svg width="24" height="24" class="icon-social">
@@ -106,7 +106,7 @@
     <section class="section hero-banner">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-button">Order Service</button>
+        <button type="button" class="hero-button" data-modal-open>Order Service</button>
       </div>
     </section>
     <!-- Section feature -->
@@ -166,7 +166,7 @@
       </div>
     </section>
     <!-- Section Our Team -->
-    <section class="section section-team hidden">
+    <section class="section section-team">
       <div class="container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
@@ -322,7 +322,7 @@
       </div>
     </section>
     <!-- Section Our Portfolio -->
-    <section class="section hidden">
+    <section class="section ">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -414,7 +414,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer hidden">
+  <footer class="footer">
     <div class="container footer-container">
       <div class="footer-logo-box footer-mobile">
         <a href="./index.html" class="footer-logo">Web<span class="navigation-logo-footer">Studio</span></a>
@@ -463,19 +463,19 @@
             <input class="footer-subscribe-input" id="footer-email" type="email" name="footer-email"
               placeholder="E-mail">
           </label>
+          <button class="footer-subscribe-button" type="submit">
+            Subscribe
+            <svg class="footer-btn-svg" width="24" height="24">
+              <use href="./images/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
         </form>
-        <button class="footer-subscribe-button" type="submit">
-          Subscribe
-          <svg class="footer-btn-svg" width="24" height="24">
-            <use href="./images/icons.svg#icon-telegram"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </footer>
-  <div class="modal-overlay is-open hidden">
+  <div class="modal-overlay is-open" data-modal>
     <div class="modal">
-      <button type="button" class="close-modal-btn">
+      <button type="button" class="close-modal-btn" data-modal-close>
         <svg class="close-modal-btn-svg" width="8" height="8">
           <use href="./images/icons.svg#icon-exide"></use>
         </svg>
@@ -529,6 +529,7 @@
       </form>
     </div>
   </div>
+  <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
 </body>
 
