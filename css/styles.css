@@ -200,6 +200,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 72px;
+  align-items: center;
 }
 .team-item {
   display: block;
